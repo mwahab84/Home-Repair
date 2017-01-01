@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Location" representedClassName="Location" syncable="YES" codeGenerationType="class">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="location_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="location_modified" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="person_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="location_orders" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Order" inverseName="order_location" inverseEntity="Order" syncable="YES"/>
+        <relationship name="location_person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="person_locations" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Order" representedClassName="Order" syncable="YES" codeGenerationType="class">
+        <attribute name="location_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="order_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="order_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="order_image_data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="order_modified" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="order_rating" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="order_thumbnail" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="order_video_data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="order_video_thumbnail" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="person_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="service_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="order_location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="location_orders" inverseEntity="Location" syncable="YES"/>
+        <relationship name="order_person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="person_orders" inverseEntity="Person" syncable="YES"/>
+        <relationship name="order_service" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Service" inverseName="service_orders" inverseEntity="Service" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
+        <attribute name="email_verified" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mobile_verified" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="person_email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="person_first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="person_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="person_image_thumbnail" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="person_landline" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="person_last_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="person_mobile" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="person_modified" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="person_password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="person_type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="person_locations" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Location" inverseName="location_person" inverseEntity="Location" syncable="YES"/>
+        <relationship name="person_orders" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Order" inverseName="order_person" inverseEntity="Order" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="person_id"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <entity name="Service" representedClassName="Service" syncable="YES" codeGenerationType="class">
+        <attribute name="service_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="service_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="service_modified" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="service_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="service_sub_cat_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="service_orders" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Order" inverseName="order_service" inverseEntity="Order" syncable="YES"/>
+        <relationship name="service_sub_cat" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Service_SubCat" inverseName="sub_cat_services" inverseEntity="Service_SubCat" syncable="YES"/>
+    </entity>
+    <entity name="Service_Category" representedClassName="Service_Category" syncable="YES" codeGenerationType="class">
+        <attribute name="service_category_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="service_category_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="service_category_modified" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="service_category_title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="service_sub_categories" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Service_SubCat" inverseName="service_category" inverseEntity="Service_SubCat" syncable="YES"/>
+    </entity>
+    <entity name="Service_SubCat" representedClassName="Service_SubCat" syncable="YES" codeGenerationType="class">
+        <attribute name="service_cate_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="service_subcat_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="service_subcat_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="service_subcat_modified" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="service_subcat_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="service_category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Service_Category" inverseName="service_sub_categories" inverseEntity="Service_Category" syncable="YES"/>
+        <relationship name="sub_cat_services" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Service" inverseName="service_sub_cat" inverseEntity="Service" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Service_Category" positionX="-5022" positionY="-3636" width="171" height="118"/>
+        <element name="Service_SubCat" positionX="-4772" positionY="-3777" width="128" height="148"/>
+        <element name="Service" positionX="-4959" positionY="-3915" width="128" height="148"/>
+        <element name="Order" positionX="-5175" positionY="-3988" width="128" height="268"/>
+        <element name="Location" positionX="-4808" positionY="-3492" width="128" height="163"/>
+        <element name="Person" positionX="-5168" positionY="-3492" width="128" height="253"/>
+    </elements>
+</model>

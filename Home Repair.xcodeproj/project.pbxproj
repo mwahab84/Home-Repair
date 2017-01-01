@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC0761221E0558E1008A7A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0761211E0558E1008A7A9B /* AppDelegate.swift */; };
+		BC0761241E0558E1008A7A9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0761231E0558E1008A7A9B /* ViewController.swift */; };
+		BC0761271E0558E1008A7A9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0761251E0558E1008A7A9B /* Main.storyboard */; };
+		BC07612A1E0558E1008A7A9B /* Home_Repair.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC0761281E0558E1008A7A9B /* Home_Repair.xcdatamodeld */; };
+		BC07612C1E0558E1008A7A9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC07612B1E0558E1008A7A9B /* Assets.xcassets */; };
+		BC07612F1E0558E1008A7A9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC07612D1E0558E1008A7A9B /* LaunchScreen.storyboard */; };
+		BC07613A1E0558E1008A7A9B /* Home_RepairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0761391E0558E1008A7A9B /* Home_RepairTests.swift */; };
+		BC0761451E0558E1008A7A9B /* Home_RepairUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0761441E0558E1008A7A9B /* Home_RepairUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC0761361E0558E1008A7A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC0761161E0558E1008A7A9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC07611D1E0558E1008A7A9B;
+			remoteInfo = "Home Repair";
+		};
+		BC0761411E0558E1008A7A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC0761161E0558E1008A7A9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC07611D1E0558E1008A7A9B;
+			remoteInfo = "Home Repair";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC07611E1E0558E1008A7A9B /* Home Repair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Home Repair.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0761211E0558E1008A7A9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC0761231E0558E1008A7A9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC0761261E0558E1008A7A9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC0761291E0558E1008A7A9B /* Home_Repair.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Home_Repair.xcdatamodel; sourceTree = "<group>"; };
+		BC07612B1E0558E1008A7A9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC07612E1E0558E1008A7A9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC0761301E0558E1008A7A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC0761351E0558E1008A7A9B /* Home RepairTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Home RepairTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0761391E0558E1008A7A9B /* Home_RepairTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_RepairTests.swift; sourceTree = "<group>"; };
+		BC07613B1E0558E1008A7A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC0761401E0558E1008A7A9B /* Home RepairUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Home RepairUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0761441E0558E1008A7A9B /* Home_RepairUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_RepairUITests.swift; sourceTree = "<group>"; };
+		BC0761461E0558E1008A7A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC07611B1E0558E1008A7A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0761321E0558E1008A7A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC07613D1E0558E1008A7A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC0761151E0558E1008A7A9B = {
+			isa = PBXGroup;
+			children = (
+				BC0761201E0558E1008A7A9B /* Home Repair */,
+				BC0761381E0558E1008A7A9B /* Home RepairTests */,
+				BC0761431E0558E1008A7A9B /* Home RepairUITests */,
+				BC07611F1E0558E1008A7A9B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC07611F1E0558E1008A7A9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC07611E1E0558E1008A7A9B /* Home Repair.app */,
+				BC0761351E0558E1008A7A9B /* Home RepairTests.xctest */,
+				BC0761401E0558E1008A7A9B /* Home RepairUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC0761201E0558E1008A7A9B /* Home Repair */ = {
+			isa = PBXGroup;
+			children = (
+				BC0761211E0558E1008A7A9B /* AppDelegate.swift */,
+				BC0761231E0558E1008A7A9B /* ViewController.swift */,
+				BC0761251E0558E1008A7A9B /* Main.storyboard */,
+				BC07612B1E0558E1008A7A9B /* Assets.xcassets */,
+				BC07612D1E0558E1008A7A9B /* LaunchScreen.storyboard */,
+				BC0761301E0558E1008A7A9B /* Info.plist */,
+				BC0761281E0558E1008A7A9B /* Home_Repair.xcdatamodeld */,
+			);
+			path = "Home Repair";
+			sourceTree = "<group>";
+		};
+		BC0761381E0558E1008A7A9B /* Home RepairTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC0761391E0558E1008A7A9B /* Home_RepairTests.swift */,
+				BC07613B1E0558E1008A7A9B /* Info.plist */,
+			);
+			path = "Home RepairTests";
+			sourceTree = "<group>";
+		};
+		BC0761431E0558E1008A7A9B /* Home RepairUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC0761441E0558E1008A7A9B /* Home_RepairUITests.swift */,
+				BC0761461E0558E1008A7A9B /* Info.plist */,
+			);
+			path = "Home RepairUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC07611D1E0558E1008A7A9B /* Home Repair */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0761491E0558E1008A7A9B /* Build configuration list for PBXNativeTarget "Home Repair" */;
+			buildPhases = (
+				BC07611A1E0558E1008A7A9B /* Sources */,
+				BC07611B1E0558E1008A7A9B /* Frameworks */,
+				BC07611C1E0558E1008A7A9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Home Repair";
+			productName = "Home Repair";
+			productReference = BC07611E1E0558E1008A7A9B /* Home Repair.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC0761341E0558E1008A7A9B /* Home RepairTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC07614C1E0558E1008A7A9B /* Build configuration list for PBXNativeTarget "Home RepairTests" */;
+			buildPhases = (
+				BC0761311E0558E1008A7A9B /* Sources */,
+				BC0761321E0558E1008A7A9B /* Frameworks */,
+				BC0761331E0558E1008A7A9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC0761371E0558E1008A7A9B /* PBXTargetDependency */,
+			);
+			name = "Home RepairTests";
+			productName = "Home RepairTests";
+			productReference = BC0761351E0558E1008A7A9B /* Home RepairTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC07613F1E0558E1008A7A9B /* Home RepairUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC07614F1E0558E1008A7A9B /* Build configuration list for PBXNativeTarget "Home RepairUITests" */;
+			buildPhases = (
+				BC07613C1E0558E1008A7A9B /* Sources */,
+				BC07613D1E0558E1008A7A9B /* Frameworks */,
+				BC07613E1E0558E1008A7A9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC0761421E0558E1008A7A9B /* PBXTargetDependency */,
+			);
+			name = "Home RepairUITests";
+			productName = "Home RepairUITests";
+			productReference = BC0761401E0558E1008A7A9B /* Home RepairUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC0761161E0558E1008A7A9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = _MOL_;
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Molutions Pty Ltd";
+				TargetAttributes = {
+					BC07611D1E0558E1008A7A9B = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = AEU29WHAF5;
+						ProvisioningStyle = Automatic;
+					};
+					BC0761341E0558E1008A7A9B = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = AEU29WHAF5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BC07611D1E0558E1008A7A9B;
+					};
+					BC07613F1E0558E1008A7A9B = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = AEU29WHAF5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BC07611D1E0558E1008A7A9B;
+					};
+				};
+			};
+			buildConfigurationList = BC0761191E0558E1008A7A9B /* Build configuration list for PBXProject "Home Repair" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC0761151E0558E1008A7A9B;
+			productRefGroup = BC07611F1E0558E1008A7A9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC07611D1E0558E1008A7A9B /* Home Repair */,
+				BC0761341E0558E1008A7A9B /* Home RepairTests */,
+				BC07613F1E0558E1008A7A9B /* Home RepairUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC07611C1E0558E1008A7A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC07612F1E0558E1008A7A9B /* LaunchScreen.storyboard in Resources */,
+				BC07612C1E0558E1008A7A9B /* Assets.xcassets in Resources */,
+				BC0761271E0558E1008A7A9B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0761331E0558E1008A7A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC07613E1E0558E1008A7A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC07611A1E0558E1008A7A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC0761241E0558E1008A7A9B /* ViewController.swift in Sources */,
+				BC07612A1E0558E1008A7A9B /* Home_Repair.xcdatamodeld in Sources */,
+				BC0761221E0558E1008A7A9B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0761311E0558E1008A7A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC07613A1E0558E1008A7A9B /* Home_RepairTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC07613C1E0558E1008A7A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC0761451E0558E1008A7A9B /* Home_RepairUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC0761371E0558E1008A7A9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC07611D1E0558E1008A7A9B /* Home Repair */;
+			targetProxy = BC0761361E0558E1008A7A9B /* PBXContainerItemProxy */;
+		};
+		BC0761421E0558E1008A7A9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC07611D1E0558E1008A7A9B /* Home Repair */;
+			targetProxy = BC0761411E0558E1008A7A9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC0761251E0558E1008A7A9B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC0761261E0558E1008A7A9B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC07612D1E0558E1008A7A9B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC07612E1E0558E1008A7A9B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC0761471E0558E1008A7A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC0761481E0558E1008A7A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC07614A1E0558E1008A7A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AEU29WHAF5;
+				INFOPLIST_FILE = "Home Repair/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Molutions.com.au.Home-Repair";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BC07614B1E0558E1008A7A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AEU29WHAF5;
+				INFOPLIST_FILE = "Home Repair/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Molutions.com.au.Home-Repair";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BC07614D1E0558E1008A7A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AEU29WHAF5;
+				INFOPLIST_FILE = "Home RepairTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Molutions.com.au.Home-RepairTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Home Repair.app/Home Repair";
+			};
+			name = Debug;
+		};
+		BC07614E1E0558E1008A7A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AEU29WHAF5;
+				INFOPLIST_FILE = "Home RepairTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Molutions.com.au.Home-RepairTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Home Repair.app/Home Repair";
+			};
+			name = Release;
+		};
+		BC0761501E0558E1008A7A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = AEU29WHAF5;
+				INFOPLIST_FILE = "Home RepairUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Molutions.com.au.Home-RepairUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Home Repair";
+			};
+			name = Debug;
+		};
+		BC0761511E0558E1008A7A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = AEU29WHAF5;
+				INFOPLIST_FILE = "Home RepairUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Molutions.com.au.Home-RepairUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Home Repair";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC0761191E0558E1008A7A9B /* Build configuration list for PBXProject "Home Repair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0761471E0558E1008A7A9B /* Debug */,
+				BC0761481E0558E1008A7A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0761491E0558E1008A7A9B /* Build configuration list for PBXNativeTarget "Home Repair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC07614A1E0558E1008A7A9B /* Debug */,
+				BC07614B1E0558E1008A7A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC07614C1E0558E1008A7A9B /* Build configuration list for PBXNativeTarget "Home RepairTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC07614D1E0558E1008A7A9B /* Debug */,
+				BC07614E1E0558E1008A7A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC07614F1E0558E1008A7A9B /* Build configuration list for PBXNativeTarget "Home RepairUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0761501E0558E1008A7A9B /* Debug */,
+				BC0761511E0558E1008A7A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BC0761281E0558E1008A7A9B /* Home_Repair.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BC0761291E0558E1008A7A9B /* Home_Repair.xcdatamodel */,
+			);
+			currentVersion = BC0761291E0558E1008A7A9B /* Home_Repair.xcdatamodel */;
+			path = Home_Repair.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BC0761161E0558E1008A7A9B /* Project object */;
+}
